@@ -1,6 +1,11 @@
-# BMI CSS
+# BMI Styleguide (note: not visual styleguide)
 
-Code standards and best practices for BMI UIUX team.
+The goals of this styleguide are:
+
+1. Set the standard for code quality across codebase
+2. Promote consistency across codebases
+3. Give developers a feeling of familiarity across codebases
+4. Increase productivity
 
 ## Naming conventions
 
@@ -12,7 +17,7 @@ BMI is using a simple, dash-separated, general -> specific naming syntax.  For e
 
 ##### Recommendation:
 
-Use a BEM-style syntax.  BEM stands for Block, Element, Modifier and, using the nav example from above, would look like this `nav-primary__nav-item` where 'nav-primary' is an object and 'nav-item' is a component of that object.  Readable, clear, object-oriented css is *very* important.
+Use a BEM-style syntax (Nicolas Gallagher's to be precise.  NG = Twitter, normalize).  BEM stands for Block, Element, Modifier and, using the nav example from above, would look like this `nav-primary__nav-item` where 'nav-primary' is an object and 'nav-item' is a component of that object.  Readable, clear, object-oriented css is *very* important.
 
 ##### Possible naming styles:
 
@@ -54,14 +59,6 @@ or
 
 Follow Harry Roberts's 80:20 rule.  If putting a design into code is causing you to over-nest and write complicated code, take a step back, re-think your process, and see if maybe a small design tweak can fix the problem.  It's important to *all* developers that the code be clean, maintainable, extensible, and small.  It's okay to make design tweaks for the sake of code.  Code is as much a priority to a developer as design/art is to a designer.
 
-## Editor configs, etc.
-
-1. Use comments!!!  Comments slow down your *immediate* work but, speed up all *future* work (including the work of any developer who has to figure out how to read your code)
-2. Remove Trailing Whitespace
-3. Indent/Tab = TWO (2) spaces, *not four (4)*.
-4. Ensure newline at end of file
-5. Translate tabs to spaces
-
 ## Git Syntax
 
 ### Commits
@@ -74,10 +71,12 @@ If your name isn't Ryan, Desmond, or Colin, submit a Pull Request for your work 
 
 ### GUI
 
-GitHub have a gui (graphic user interface).
+GitHub have a gui (graphic user interface).  Please, don't use the GUI.  If you do, keep in mind that there are some latency/lag issues keeping up with very recent content and that the GUI sometimes doesn't know how to handle what changes are the most recent if multiple people are editing the same piece of code.  In the command line, conflicts like this are handled manually using a merge tool.  The GUI tries to handle these conflicts itself and, in our experience, rarely gets it right and usually results in extra work reverting and manually adding changes to a new commit.
 
 ## General Rules/Thoughts
 
+- It's your job as a developer to maintain code.  That's part of what you're getting paid to do.
+- DRY out your CSS and markup.  DRY = Don't Repeat Yourself.
 - Don't style element selectors - use classes!  (i.e. `.nav-primary li {}` should be `.nav-primary nav-primary__list-item {}`)  This avoids overriding base styles!  Don't get in a specificity war!  This is also inefficient.
 - Don't ration classes - use them liberally.  Did you know that you can use `&` in SCSS to create additional classes that are modified by the root class?  i.e. `.my-head { &__ear--left {} &__ear--right {} }` compiles to `.my-head{} .my-head__ear--left{} .my-head__ear--right{}`
 - Don't write classes in HTML that don't exist in CSS (Why would you do that?)
@@ -88,3 +87,12 @@ GitHub have a gui (graphic user interface).
 - Expect and accomodate change
 - The simplest option is usually the best
 - Reduce the amount of moving parts
+- CSS Framework != UI Toolkit.  A CSS Framework is a very simple set of rules, guidelines, and a foundation for building out CSS.  A UI Toolkit is a pre-styled collection of UI elements (i.e. Bootstrap).
+
+## Editor configs, etc.
+
+1. Use comments!!!  Comments slow down your *immediate* work but, speed up all *future* work (including the work of any developer who has to figure out how to read your code)
+2. Remove Trailing Whitespace
+3. Indent/Tab = TWO (2) spaces, *not four (4)*.
+4. Ensure newline at end of file
+5. Translate tabs to spaces
