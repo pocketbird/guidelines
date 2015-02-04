@@ -24,6 +24,10 @@ Recommendation: Use a BEM-style syntax.  BEM stands for Block, Element, Modifier
 
 There is no longer a need for machine-readable semantic naming conventions.  So, choose one that is easiest for developers to read.  Selectors should be named general -> specific in the same way that BEM-style syntax starts with the most general object, then specifies what component of that object, and, where relevant, what modifier for that component.  For example, BEM `nav-primary__nav-item__visited` or `person__hand__ugly` or Simple Train-case: `nav-primary-nav-item-visited` or `person-hand-ugly`.
 
+## Design-Code Compromise
+
+Follow Harry Roberts's 80:20 rule.  If putting a design into code is causing you to over-nest and write complicated code, take a step back, re-think your process, and see if maybe a small design tweak can fix the problem.  It's important to *all* developers that the code be clean, maintainable, extensible, and small.  It's okay to make design tweaks for the sake of code.  Code is as much a priority to a developer as design/art is to a designer.
+
 ## Editor configs, etc.
 
 1. Use comments!!!  Comments slow down your *immediate* work but, speed up all *future* work (including the work of any developer who has to figure out how to read your code)
