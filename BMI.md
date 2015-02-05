@@ -9,21 +9,14 @@ The goals of this styleguide are:
 
 ## Naming conventions
 
-### Syntax
+### BEM Syntax
 
-##### Currently,
+Use Nicolas Gallagher's BEM-style syntax.  BEM stands for Block, Element, Modifier and looks like this `nav-primary__nav-item`.
+Readable, clear, object-oriented css is *very* important.
 
-BMI is using a simple, dash-separated, general -> specific naming syntax.  For example, a navigation item might be `nav-primary-nav-item`.  The benefit here is that it's very easy to learn.  It's a no-frills approach.  The negative is that while train-casing (lowercase, dash-separated) is very readable, when you start combining multiple objects or modifiers (like a nav-item for nav-primary) it gets difficult to read.
-
-##### Recommendation:
-
-Use a BEM-style syntax (Nicolas Gallagher's to be precise.  NG = Twitter, normalize).  BEM stands for Block, Element, Modifier and, using the nav example from above, would look like this `nav-primary__nav-item` where 'nav-primary' is an object and 'nav-item' is a component of that object.  Readable, clear, object-oriented css is *very* important.
-
-##### Possible naming styles:
-
-1. object__component--modifier (double underscores denote components, double dashes denote modifiers)
-2. object--component--modifier (double dashes denote separation)
-3. object__component__modifier (double underscores denote separation)
+Read the following before writing BEM classes (Especially the parts about scope):
+[csswizardry - MindBEMding](http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/)
+[cssguidelin.es - BEM-like Naming](http://cssguidelin.es/#bem-like-naming)
 
 ### General -> Specific
 
@@ -31,29 +24,29 @@ There is no longer a need for machine-readable semantic naming conventions.  So,
 
 ### Figure out how to think about it
 
-Consistent naming is crucial.  Find a real-world example that makes sense to you... i.e. Lego.  If you are building something out of legos the process is something like this:
+Consistent naming is crucial.  Find a real-world example that makes sense to you... If you are building a house the process is something like this:
 
 1. What are you building?  House.
-2. Grab a piece.  Block.
-3. What color is the block?  Red.
+2. What part of the house are you working on?  Door.
+3. What color is the door?  Red.
 
-`house__block--red`
-or
-`house-block-red`
+`house__door--red`
 
 1. What are you building?  Car.
-2. Grab a piece.  Wheel.
+2. What part of the car are you working on?  Wheel.
 3. What size is the wheel?  Small.
 
 `car__wheel--small`
-or
-`car-wheel-small`
 
 4. What color is the wheel?  Black.
 
 `car__wheel--small--black`
-or
-`car-wheel-small-black`
+
+## @extend
+
+If you use @extend, please be aware of what your output code looks like.
+Pull up your output code in a window next to your @extend code so you can see exactly what changes you're making.
+
 
 ## Design-Code Compromise
 
