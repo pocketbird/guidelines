@@ -47,6 +47,10 @@ Consistent naming is crucial.  Find a real-world example that makes sense to you
 If you use @extend, please be aware of what your output code looks like.
 Pull up your output code in a window next to your @extend code so you can see exactly what changes you're making.
 
+## Documentation
+
+Use [SassDoc](http://sassdoc.com/) to document your scss.
+If you add a library, plugin, etc. add it to README.md.
 
 ## Design-Code Compromise
 
@@ -64,7 +68,7 @@ If your name isn't Ryan, Desmond, or Colin, submit a Pull Request for your work 
 
 ### GUI
 
-GitHub have a gui (graphic user interface).  Please, don't use the GUI.  If you do, keep in mind that there are some latency/lag issues keeping up with very recent content and that the GUI sometimes doesn't know how to handle what changes are the most recent if multiple people are editing the same piece of code.  In the command line, conflicts like this are handled manually using a merge tool.  The GUI tries to handle these conflicts itself and, in our experience, rarely gets it right and usually results in extra work reverting and manually adding changes to a new commit.
+GitHub have a gui (graphic user interface).  If your name isn't Ryan, don't use the GUI.  If you do, keep in mind that there are some latency/lag issues keeping up with very recent content and that the GUI sometimes doesn't know how to handle what changes are the most recent if multiple people are editing the same piece of code.  In the command line, conflicts like this are handled manually using a merge tool.  The GUI tries to handle these conflicts itself and, in our experience, rarely gets it right and usually results in extra work reverting and manually adding changes to a new commit.
 
 ## General Rules/Thoughts
 
