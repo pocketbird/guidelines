@@ -49,7 +49,7 @@ Pull up your output code in a window next to your @extend code so you can see ex
 
 ## Documentation
 
-Use [SassDoc](http://sassdoc.com/) to document your scss.
+Use [SassDoc](http://sassdoc.com/) to document your scss.  Write your comments in the same order they appear in SassDoc.
 If you add a library, plugin, etc. add it to README.md.
 
 ## Design-Code Compromise
