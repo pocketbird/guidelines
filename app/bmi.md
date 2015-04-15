@@ -40,7 +40,7 @@ Consistent naming is crucial.  Find a real-world example that makes sense to you
 
 4. What color is the wheel?  Black.
 
-`car__wheel--small--black`
+`car__wheel--small car__wheel--black`
 
 ## @extend
 
