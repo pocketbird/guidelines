@@ -503,7 +503,7 @@ Whenever you are building a UI component, try and see if you can break it into t
 
 ### z-index
 
-`z-index` values should range from 0 to 9.  The fixed sidebar-nav is `z-index: 9` and the body is `z-index: 1`.
+`z-index` values should range from 0 to 9.  Modals or system dialogs are `z-index 9`, the fixed sidebar nav is `z-index: 8`, the html body tag is `z-index: 1`.
 
 ## Credits
 
