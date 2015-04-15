@@ -1,4 +1,4 @@
-# SeeEssEss
+# Guidelines
 
 Code styleguide and standards of practice.
 
