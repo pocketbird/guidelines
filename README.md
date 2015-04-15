@@ -73,8 +73,9 @@ Property: value declarations should be:
     border-bottom: $active-border;
   }
 
-  .shell--red {
-    @extend %shell
+  &__outfit {
+    @extend %shirt;
+    background-color: $green;
   }
 }
 ```
