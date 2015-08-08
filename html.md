@@ -36,7 +36,17 @@ Browsers are fast but, these tiny fragments of seconds add up when your css is n
 
 Very slightly better but still bad would be `.my-nav .nav-list .nav-list-item {}` because again, the browser reads right-to-left and looks at every `.nav-list-item` and finds parent `.nav-list` and then `.nav`.  Better because you've cut out some of the `li`s that the browser will initially look at but, still not the best solution because the browser has to find parents - not to mention you're getting awfully specific.
 
-Further, it's bad practice to use override styles (except in the case of browser reset styles like Normalize.css).  If the browser has already styled `ul` and `li` and then you write `nav-list` and `nav-list-item` classes that override those styles, the browser is effectively styling those twice - Once when it initially styles `li {}` and once when it applies the styles for `.nav-list-item`.
+Further, it's bad practice to use override styles (except in the case of browser reset styles like Normalize.css).  If the browser has already styled `ul` and `li` and then you write `nav-list` and `nav-list-item` classes that override those styles, the browser is effectively styling those twice - Once when it initially styles `li {}` and once when it applies the styles for `.nav-list-item`.  'Override' here refers to overriding specific properties.  Example:
+
+```
+li {
+  color: red;
+}
+
+.nav-list-item {
+  color: blue;
+}
+```
 
 A better solution would be:
 ```
