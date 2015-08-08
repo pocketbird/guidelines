@@ -8,17 +8,20 @@
   </head>
   <body>
     <header>
-    <span class="logo">
-      <img src="my-logo.jpg" alt="logo">
-    </span>
-    <nav class="nav">
-      <ul class="nav-list">
-        <li class="nav-list-item"><a href=""></a></li>
-        <li class="nav-list-item"><a href=""></a></li>
-        <li class="nav-list-item"><a href=""></a></li>
-      </ul>
-    </nav>
+      <span class="logo">
+        <img src="my-logo.jpg" alt="logo">
+      </span>
+      <nav class="nav">
+        <ul class="nav-list">
+          <li class="nav-list-item"><a href=""></a></li>
+          <li class="nav-list-item"><a href=""></a></li>
+          <li class="nav-list-item"><a href=""></a></li>
+        </ul>
+      </nav>
     </header>
+    <div class="content">
+
+    </div>
   </body>
 </html>
 ```
