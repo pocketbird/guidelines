@@ -1,4 +1,4 @@
-# Guidelines
+# CSS/SASS Guidelines
 
 Code styleguide and standards of practice.
 
@@ -493,7 +493,7 @@ Above, we can see how the `.btn {}` class simply provides structural styling to 
 <button class="btn  btn--negative">Delete</button>
 ```
 
-Favour the multiple-class approach over using something like `@extend`: using multiple classes in your markup — as opposed to wrapping the classes up into one using a preprocessor - 
+Favour the multiple-class approach over using something like `@extend`: using multiple classes in your markup — as opposed to wrapping the classes up into one using a preprocessor -
 
 - Gives you a better paper-trail in your markup, and allows you to see quickly and explicitly which classes are acting on a piece of HTML;
 - Allows for greater composition in that classes are not tightly bound to other styles in your CSS.
@@ -509,5 +509,5 @@ Whenever you are building a UI component, try and see if you can break it into t
 ## Credits
 
 - [Harry Roberts](http://csswizardry.com): I stole most or all of this from [CSS Guidelines](http://cssguidelin.es).
-- [Nicole Sullivan](http://www.stubbornella.org/content/): Pioneer of OOCSS and inventor of the `media` object.  
+- [Nicole Sullivan](http://www.stubbornella.org/content/): Pioneer of OOCSS and inventor of the `media` object.
 
